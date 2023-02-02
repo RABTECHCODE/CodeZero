@@ -121,13 +121,13 @@
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@mipmap/ic_info"/>
+                android:src="@drawable/ic_baseline_gamepad_24"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="A propos"/>
+                android:text="Jouer"/>
 
         </LinearLayout>
 
