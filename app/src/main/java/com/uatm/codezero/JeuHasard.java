@@ -32,7 +32,7 @@ public class JeuHasard extends AppCompatActivity {
 
     int positionBonneReponse = 0;
     int score = 0;
-    int nbrEchec=0;
+    int nbrEchec = 0;
 
     int[] idImageFruitsList = {
             R.mipmap.fruit_orange,
@@ -57,13 +57,11 @@ public class JeuHasard extends AppCompatActivity {
         setContentView(R.layout.activity_jeu_hasard);
 
 
-
         initView();
         context = this;
 
-        backgroudPlayer =MediaPlayer.create(context, R.raw.son);
+        backgroudPlayer = MediaPlayer.create(context, R.raw.son);
         backgroudPlayer.start();
-
 
 
         nomFruitsList.add("Orange");
@@ -74,7 +72,7 @@ public class JeuHasard extends AppCompatActivity {
         nomFruitsList.add("Cerise");
         nomFruitsList.add("Banane");
 
-
+       String nom=  getIntent().getStringExtra("nom");
         generateFruit();
 
         imgvFruit1.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +83,7 @@ public class JeuHasard extends AppCompatActivity {
 
             }
         });
+        tvScore.setText(nom);
 
         imgvFruit2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -187,10 +186,10 @@ public class JeuHasard extends AppCompatActivity {
 
         }
         tvScore.setText("Score : " + String.valueOf(score));
-        if(nbrEchec<3){
+        if (nbrEchec < 3) {
             generateFruit();
 
-        }else{
+        } else {
             backgroudPlayer.stop();
             startActivity(new Intent(JeuHasard.this, MainActivity.class));
         }

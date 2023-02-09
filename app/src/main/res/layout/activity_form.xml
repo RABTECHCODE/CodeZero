@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="36dp">
+
+        <EditText
+            android:id="@+id/edt_nom"
+            android:height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre nom" />
+
+        <EditText
+            android:id="@+id/edt_tel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Votre numéro whatsapp" />
+
+        <Button
+            android:id="@+id/bt_enregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_ecran"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:padding="36dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

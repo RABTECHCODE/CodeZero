@@ -5,8 +5,8 @@ Ainsi, l’équipe pédagogique de l’UATM s’attèle à former les meilleurs 
 Par ailleurs l’excellent taux d’insertion de nos diplômés dans la vie professionnelle constitue aussi un motif de fierté pour nous. Beaucoup reconnaissent d’ailleurs cet état de fait et distinguent l’UATM pour ses performances.</string>
 
 
-<string-array name="fuits">
-    <item>orange</item>
-    <item>Banane</item>
-</string-array>
+    <string-array name="fuits">
+        <item>orange</item>
+        <item>Banane</item>
+    </string-array>
 </resources>
